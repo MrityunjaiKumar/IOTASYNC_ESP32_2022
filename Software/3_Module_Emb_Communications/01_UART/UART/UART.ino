@@ -1,5 +1,5 @@
 /**
- * @file 01_DigitalWrite_Example.ino
+ * @file UART.ino
  * @author Mrityunjai Kumar (mrityunjai@sincgrid.com)
  * @brief
  * @version 0.1
@@ -46,29 +46,29 @@ void loop() {
   }
   int choice = Serial.readString().toInt();
   switch (choice) {
-    case 1:
-      Serial.println("Addition");
-      Serial.println(num1 + "+" + num2 + "=" + (num1.toInt() + num2.toInt()) + "\n");
-      break;
-    case 2:
-      Serial.println("Subtraction");
-      Serial.println(num1 + "-" + num2 + "=" + (num1.toInt() - num2.toInt()) + "\n");
-      break;
-    case 3:
-      Serial.println("Multiplication");
-      Serial.println(num1 + "X" + num2 + "=" + (num1.toInt() * num2.toInt()) + "\n");
-      break;
-    case 4:
-      Serial.println("Division");
-      Serial.println(num1 + "/" + num2 + "=" + (num1.toFloat() / num2.toFloat()) + "\n");
-      break;
-    case 5:
-      Serial.println("Modulo");
-      Serial.println(num1 + "%" + num2 + "=" + (num1.toInt() % num2.toInt()) + "\n");
-      break;
-    default:
-      Serial.println("INVALID OPERATION");
-      break;
+  case 1:
+    Serial.println("Addition");
+    Serial.println(num1 + "+" + num2 + "=" + (num1.toInt() + num2.toInt()) + "\n");
+    break;
+  case 2:
+    Serial.println("Subtraction");
+    Serial.println(num1 + "-" + num2 + "=" + (num1.toInt() - num2.toInt()) + "\n");
+    break;
+  case 3:
+    Serial.println("Multiplication");
+    Serial.println(num1 + "X" + num2 + "=" + (num1.toInt() * num2.toInt()) + "\n");
+    break;
+  case 4:
+    Serial.println("Division");
+    Serial.println(num1 + "/" + num2 + "=" + (num1.toFloat() / num2.toFloat()) + "\n");
+    break;
+  case 5:
+    Serial.println("Modulo");
+    Serial.println(num1 + "%" + num2 + "=" + (num1.toInt() % num2.toInt()) + "\n");
+    break;
+  default:
+    Serial.println("INVALID OPERATION");
+    break;
   }
   delay(1000);
 }
