@@ -8,7 +8,9 @@
  *
  * Copyright Sincgrid LLP
  *
- * Problem statement:- Glow led when button is pressed, otherwise off
+ * Problem statement:- Turn on the led from api in same network.
+ * <IP>/on   -->> To turn on the led
+ * <IP>/off   -->> To turn off the led
  *
  */
 
