@@ -1,3 +1,14 @@
+/**
+ * @file 01_I2C_Scanner.ino
+ * @author Mrityunjai Kumar (mrityunjai@sincgrid.com)
+ * @brief
+ * @version 0.1
+ * @date 2022-09-21
+ *
+ * Copyright Sincgrid LLP
+ * I2C scanner application search for all the slave devices present on the SDA and SCL Line
+ */
+
 #include <Arduino.h>
 
 #include <Wire.h>
